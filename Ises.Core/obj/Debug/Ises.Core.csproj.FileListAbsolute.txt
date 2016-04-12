@@ -1,0 +1,13 @@
+C:\Repository\Ises\Ises.Core\bin\Debug\Ises.Core.dll.config
+C:\Repository\Ises\Ises.Core\bin\Debug\Ises.Core.dll
+C:\Repository\Ises\Ises.Core\bin\Debug\Ises.Core.pdb
+C:\Repository\Ises\Ises.Core\bin\Debug\EntityFramework.dll
+C:\Repository\Ises\Ises.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Repository\Ises\Ises.Core\bin\Debug\EntityFramework.xml
+C:\Repository\Ises\Ises.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Repository\Ises\Ises.Core\obj\Debug\Ises.Core.csprojResolveAssemblyReference.cache
+C:\Repository\Ises\Ises.Core\obj\Debug\Ises.Core.dll
+C:\Repository\Ises\Ises.Core\obj\Debug\Ises.Core.pdb
+C:\Repository\Ises\Ises.Core\bin\Debug\EntityFramework.MappingAPI.dll
+C:\Repository\Ises\Ises.Core\bin\Debug\TrackerEnabledDbContext.Common.dll
+C:\Repository\Ises\Ises.Core\bin\Debug\EntityFramework.MappingAPI.pdb

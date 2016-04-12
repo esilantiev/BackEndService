@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1CCEE285-5191-4A7C-877B-6F6655E381C2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ises.Application</RootNamespace>
+    <AssemblyName>Ises.Application</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac, Version=3.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper">
+      <HintPath>..\packages\AutoMapper.4.0.4\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Managers\AreaManager.cs" />
+    <Compile Include="Managers\AreaTypeManager.cs" />
+    <Compile Include="Managers\CertificateUserManager.cs" />
+    <Compile Include="Managers\HazardControlManager.cs" />
+    <Compile Include="Managers\HazardGroupManager.cs" />
+    <Compile Include="Managers\HazardManager.cs" />
+    <Compile Include="Managers\HazardRuleManager.cs" />
+    <Compile Include="Managers\HistoryChangeManager.cs" />
+    <Compile Include="Managers\IManager.cs" />
+    <Compile Include="Managers\InstallationManager.cs" />
+    <Compile Include="Managers\LeadDisciplineManager.cs" />
+    <Compile Include="Managers\LocationManager.cs" />
+    <Compile Include="Managers\OrganizationManager.cs" />
+    <Compile Include="Managers\PositionManager.cs" />
+    <Compile Include="Managers\RolePermissionManager.cs" />
+    <Compile Include="Managers\ExternalDocumentManager.cs" />
+    <Compile Include="Managers\IsolationCertificateManager.cs" />
+    <Compile Include="Managers\IsolationPointManager.cs" />
+    <Compile Include="Managers\WorkCertificateCategoryManager.cs" />
+    <Compile Include="Managers\WorkCertificateManager.cs" />
+    <Compile Include="Managers\UserManager.cs" />
+    <Compile Include="Managers\UserRoleManager.cs" />
+    <Compile Include="Mappers\AutoMapperConfiguration.cs" />
+    <Compile Include="Mappers\DomainToModelMappingProfile.cs" />
+    <Compile Include="Mappers\ModelToDomainMappingProfile.cs" />
+    <Compile Include="Module.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ises.Contracts\Ises.Contracts.csproj">
+      <Project>{65860E7C-8691-41D9-B643-F05FD1D1C7B2}</Project>
+      <Name>Ises.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ises.Core.Common\Ises.Core.Common.csproj">
+      <Project>{67202C7E-0993-471A-9912-4E025B3A02EB}</Project>
+      <Name>Ises.Core.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ises.Core\Ises.Core.csproj">
+      <Project>{132FF0E3-2834-4AC1-9AAC-ED0C812725EA}</Project>
+      <Name>Ises.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ises.Data\Ises.Data.csproj">
+      <Project>{C4C48A0A-2893-4CF0-A15C-6126965D1CB0}</Project>
+      <Name>Ises.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ises.Domain\Ises.Domain.csproj">
+      <Project>{2AEE5B36-04D8-4AA5-BC2C-345430CDF3EF}</Project>
+      <Name>Ises.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

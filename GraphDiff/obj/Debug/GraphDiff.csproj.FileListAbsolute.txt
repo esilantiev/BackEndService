@@ -1,0 +1,9 @@
+C:\Repository\Ises\GraphDiff\bin\Debug\RefactorThis.GraphDiff.dll
+C:\Repository\Ises\GraphDiff\bin\Debug\RefactorThis.GraphDiff.pdb
+C:\Repository\Ises\GraphDiff\bin\Debug\EntityFramework.dll
+C:\Repository\Ises\GraphDiff\bin\Debug\EntityFramework.SqlServer.dll
+C:\Repository\Ises\GraphDiff\bin\Debug\EntityFramework.xml
+C:\Repository\Ises\GraphDiff\bin\Debug\EntityFramework.SqlServer.xml
+C:\Repository\Ises\GraphDiff\obj\Debug\GraphDiff.csprojResolveAssemblyReference.cache
+C:\Repository\Ises\GraphDiff\obj\Debug\RefactorThis.GraphDiff.dll
+C:\Repository\Ises\GraphDiff\obj\Debug\RefactorThis.GraphDiff.pdb

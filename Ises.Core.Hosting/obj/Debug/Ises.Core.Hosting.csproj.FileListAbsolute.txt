@@ -1,0 +1,15 @@
+C:\Repository\Ises\Ises.Core.Hosting\bin\Debug\Ises.Core.Hosting.dll
+C:\Repository\Ises\Ises.Core.Hosting\bin\Debug\Ises.Core.Hosting.pdb
+C:\Repository\Ises\Ises.Core.Hosting\bin\Debug\Autofac.dll
+C:\Repository\Ises\Ises.Core.Hosting\bin\Debug\log4net.dll
+C:\Repository\Ises\Ises.Core.Hosting\bin\Debug\Microsoft.Owin.dll
+C:\Repository\Ises\Ises.Core.Hosting\bin\Debug\Microsoft.Owin.Hosting.dll
+C:\Repository\Ises\Ises.Core.Hosting\bin\Debug\Owin.dll
+C:\Repository\Ises\Ises.Core.Hosting\bin\Debug\Topshelf.dll
+C:\Repository\Ises\Ises.Core.Hosting\bin\Debug\Autofac.xml
+C:\Repository\Ises\Ises.Core.Hosting\bin\Debug\log4net.xml
+C:\Repository\Ises\Ises.Core.Hosting\bin\Debug\Microsoft.Owin.xml
+C:\Repository\Ises\Ises.Core.Hosting\bin\Debug\Microsoft.Owin.Hosting.xml
+C:\Repository\Ises\Ises.Core.Hosting\obj\Debug\Ises.Core.Hosting.csprojResolveAssemblyReference.cache
+C:\Repository\Ises\Ises.Core.Hosting\obj\Debug\Ises.Core.Hosting.dll
+C:\Repository\Ises\Ises.Core.Hosting\obj\Debug\Ises.Core.Hosting.pdb

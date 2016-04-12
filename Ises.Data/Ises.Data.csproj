@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C4C48A0A-2893-4CF0-A15C-6126965D1CB0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ises.Data</RootNamespace>
+    <AssemblyName>Ises.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.MappingAPI">
+      <HintPath>..\packages\EntityFramework.MappingAPI.6.1.0.9\lib\net45\EntityFramework.MappingAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TrackerEnabledDbContext">
+      <HintPath>..\packages\TrackerEnabledDbContext.3.3.13\lib\net45\TrackerEnabledDbContext.dll</HintPath>
+    </Reference>
+    <Reference Include="TrackerEnabledDbContext.Common">
+      <HintPath>..\packages\TrackerEnabledDbContext.Common.3.3.13\lib\net45\TrackerEnabledDbContext.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DbContexts\IsesDbContext.cs" />
+    <Compile Include="EntityTypeConfigurations\ActionTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\AreaTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\AreaTypeTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\BaseCertificateTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\CertificateUserTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\ExternalDocumentTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\HazardControlTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\HazardGroupTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\HazardRuleTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\HazardTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\HistoryChangeTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\InstallationTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\IsolationCertificateTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\IsolationPointTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\LeadDisciplineTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\LocationTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\OrganizationTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\PositionTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\RolePermissionTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\UserRoleTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\UserTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\WorkCertificateAreaTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\WorkCertificateCategoryTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\WorkCertificateHazardTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\WorkCertificateHazardControlTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\WorkCertificateTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\WorkCertificateWorkCertificateTypeConfiguration.cs" />
+    <Compile Include="MappingSchemes\AreaMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\AreaTypeMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\CertificateUserMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\ExternalDocumentMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\HazardControlMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\HazardGroupMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\HazardMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\HazardRuleMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\HistoryChangeMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\IAreaMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\IAreaTypeMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\ICertificateUserMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\IExternalDocumentMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\IHazardControlMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\IHazardGroupMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\IHazardMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\IHazardRuleMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\IHistoryChangeMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\IInstallationMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\IIsolationPointMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\ILeadDisciplineMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\IPositionMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\ILocationMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\IMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\InstallationMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\IOrganizationMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\IRolePermissionMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\IIsolationCertificateMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\IsolationCertificateMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\IsolationPointMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\IUserMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\IUserRoleMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\IWorkCertificateCategoryMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\IWorkCertificateMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\LeadDisciplineMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\PositionMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\LocationMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\OrganizationMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\RolePermissionMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\UserMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\UserRoleMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\WorkCertificateCategoryMappingSchemeRegistrator.cs" />
+    <Compile Include="MappingSchemes\WorkCertificateMappingSchemeRegistrator.cs" />
+    <Compile Include="Migrations\201509190930229_Version_1.0.0.cs" />
+    <Compile Include="Migrations\201509190930229_Version_1.0.0.Designer.cs">
+      <DependentUpon>201509190930229_Version_1.0.0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201509191301359_Version_1.0.1.cs" />
+    <Compile Include="Migrations\201509191301359_Version_1.0.1.Designer.cs">
+      <DependentUpon>201509191301359_Version_1.0.1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201509191321006_Version_1.0.2.cs" />
+    <Compile Include="Migrations\201509191321006_Version_1.0.2.Designer.cs">
+      <DependentUpon>201509191321006_Version_1.0.2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201509191327385_Version_1.0.3.cs" />
+    <Compile Include="Migrations\201509191327385_Version_1.0.3.Designer.cs">
+      <DependentUpon>201509191327385_Version_1.0.3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201509200411126_Version_1.0.4.cs" />
+    <Compile Include="Migrations\201509200411126_Version_1.0.4.Designer.cs">
+      <DependentUpon>201509200411126_Version_1.0.4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510011754277_Version_1.0.6.cs" />
+    <Compile Include="Migrations\201510011754277_Version_1.0.6.Designer.cs">
+      <DependentUpon>201510011754277_Version_1.0.6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510011759087_Version_1.0.7.cs" />
+    <Compile Include="Migrations\201510011759087_Version_1.0.7.Designer.cs">
+      <DependentUpon>201510011759087_Version_1.0.7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510030701548_Version_1.0.8.cs" />
+    <Compile Include="Migrations\201510030701548_Version_1.0.8.Designer.cs">
+      <DependentUpon>201510030701548_Version_1.0.8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510030743336_Version_1.0.9.cs" />
+    <Compile Include="Migrations\201510030743336_Version_1.0.9.Designer.cs">
+      <DependentUpon>201510030743336_Version_1.0.9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510101221489_Version_1.0.10.cs" />
+    <Compile Include="Migrations\201510101221489_Version_1.0.10.Designer.cs">
+      <DependentUpon>201510101221489_Version_1.0.10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510111645391_Version_1.0.11.cs" />
+    <Compile Include="Migrations\201510111645391_Version_1.0.11.Designer.cs">
+      <DependentUpon>201510111645391_Version_1.0.11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510311321374_Version_1.0.12.cs" />
+    <Compile Include="Migrations\201510311321374_Version_1.0.12.Designer.cs">
+      <DependentUpon>201510311321374_Version_1.0.12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\BaseDbMigration.cs" />
+    <Compile Include="Migrations\DatabaseLoader.cs" />
+    <Compile Include="Migrations\ExtendedCodeGenerator.cs" />
+    <Compile Include="Migrations\IsesDbConfiguration.cs" />
+    <Compile Include="Module.cs" />
+    <Compile Include="Repositories\AreaRepository.cs" />
+    <Compile Include="Repositories\AreaTypeRepository.cs" />
+    <Compile Include="Repositories\BaseRepository.cs" />
+    <Compile Include="Repositories\CertificateUserManager.cs" />
+    <Compile Include="Repositories\HazardControlRepository.cs" />
+    <Compile Include="Repositories\HazardGroupRepository.cs" />
+    <Compile Include="Repositories\HazardRepository.cs" />
+    <Compile Include="Repositories\HazardRuleRepository.cs" />
+    <Compile Include="Repositories\InstallationRepository.cs" />
+    <Compile Include="Repositories\IRepository.cs" />
+    <Compile Include="Common\Utils.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\LeadDisciplineRepository.cs" />
+    <Compile Include="Repositories\LocationRepository.cs" />
+    <Compile Include="Repositories\OrganizationRepository.cs" />
+    <Compile Include="Repositories\PositionRepository.cs" />
+    <Compile Include="Repositories\RolePermissionRepository.cs" />
+    <Compile Include="Repositories\ExternalDocumentRepository.cs" />
+    <Compile Include="Repositories\HistoryChangeRepository.cs" />
+    <Compile Include="Repositories\IsolationCertificateRepository.cs" />
+    <Compile Include="Repositories\IIsolationPointRepository.cs" />
+    <Compile Include="Repositories\WorkCertificateCategoryRepository.cs" />
+    <Compile Include="Repositories\WorkCertificateRepository.cs" />
+    <Compile Include="Repositories\UserRepository.cs" />
+    <Compile Include="Repositories\UserRoleRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GraphDiff\GraphDiff.csproj">
+      <Project>{d9725b00-669c-409d-9ab8-c674710c8e5d}</Project>
+      <Name>GraphDiff</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ises.Contracts\Ises.Contracts.csproj">
+      <Project>{65860E7C-8691-41D9-B643-F05FD1D1C7B2}</Project>
+      <Name>Ises.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ises.Core.Common\Ises.Core.Common.csproj">
+      <Project>{67202c7e-0993-471a-9912-4e025b3a02eb}</Project>
+      <Name>Ises.Core.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ises.Core\Ises.Core.csproj">
+      <Project>{132FF0E3-2834-4AC1-9AAC-ED0C812725EA}</Project>
+      <Name>Ises.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ises.Domain\Ises.Domain.csproj">
+      <Project>{2AEE5B36-04D8-4AA5-BC2C-345430CDF3EF}</Project>
+      <Name>Ises.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Migrations\migrations.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201509190930229_Version_1.0.0.resx">
+      <DependentUpon>201509190930229_Version_1.0.0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201509191301359_Version_1.0.1.resx">
+      <DependentUpon>201509191301359_Version_1.0.1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201509191321006_Version_1.0.2.resx">
+      <DependentUpon>201509191321006_Version_1.0.2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201509191327385_Version_1.0.3.resx">
+      <DependentUpon>201509191327385_Version_1.0.3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201509200411126_Version_1.0.4.resx">
+      <DependentUpon>201509200411126_Version_1.0.4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510011754277_Version_1.0.6.resx">
+      <DependentUpon>201510011754277_Version_1.0.6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510011759087_Version_1.0.7.resx">
+      <DependentUpon>201510011759087_Version_1.0.7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510030701548_Version_1.0.8.resx">
+      <DependentUpon>201510030701548_Version_1.0.8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510030743336_Version_1.0.9.resx">
+      <DependentUpon>201510030743336_Version_1.0.9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510101221489_Version_1.0.10.resx">
+      <DependentUpon>201510101221489_Version_1.0.10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510111645391_Version_1.0.11.resx">
+      <DependentUpon>201510111645391_Version_1.0.11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510311321374_Version_1.0.12.resx">
+      <DependentUpon>201510311321374_Version_1.0.12.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

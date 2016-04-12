@@ -1,0 +1,11 @@
+﻿Enable-Migrations -StartUpProjectName Ises.BackOffice.Host -ProjectName Ises.Data -ContextTypeName "IsesDbContext" -force 
+
+Add-Migration -StartUpProjectName "Ises.BackOffice.Host" -ProjectName "Ises.Data" -force -Name "Version_1.0.0"
+Add-Migration -StartUpProjectName "Ises.BackOffice.Host" -ProjectName "Ises.Data" -force -Name "Version_1.1.0"
+Add-Migration -StartUpProjectName "Ises.BackOffice.Host" -ProjectName "Ises.Data" -force -Name "Version_1.2.0"
+
+Update-Database -StartUpProjectName "Ises.BackOffice.Host" -ProjectName "Ises.Data" -TargetMigration "Version_1.0.0"
+Update-Database -StartUpProjectName "Ises.BackOffice.Host" -ProjectName "Ises.Data" -TargetMigration "Version_1.1.0"
+Update-Database -StartUpProjectName "Ises.BackOffice.Host" -ProjectName "Ises.Data" -TargetMigration "Version_1.2.0"
+Update-Database -StartUpProjectName "Ises.BackOffice.Host" -ProjectName "Ises.Data" -TargetMigration $InitialDatabase
+Update-Database -StartUpProjectName "Ises.BackOffice.Host" -ProjectName "Ises.Data" # to latest

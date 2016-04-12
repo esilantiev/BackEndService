@@ -1,0 +1,10 @@
+C:\Repository\Ises\Ises.Core.Common\bin\Debug\Ises.Core.Common.dll
+C:\Repository\Ises\Ises.Core.Common\bin\Debug\Ises.Core.Common.pdb
+C:\Repository\Ises\Ises.Core.Common\bin\Debug\log4net.dll
+C:\Repository\Ises\Ises.Core.Common\bin\Debug\Microsoft.Owin.dll
+C:\Repository\Ises\Ises.Core.Common\bin\Debug\Owin.dll
+C:\Repository\Ises\Ises.Core.Common\bin\Debug\log4net.xml
+C:\Repository\Ises\Ises.Core.Common\bin\Debug\Microsoft.Owin.xml
+C:\Repository\Ises\Ises.Core.Common\obj\Debug\Ises.Core.Common.csprojResolveAssemblyReference.cache
+C:\Repository\Ises\Ises.Core.Common\obj\Debug\Ises.Core.Common.dll
+C:\Repository\Ises\Ises.Core.Common\obj\Debug\Ises.Core.Common.pdb

@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{65860E7C-8691-41D9-B643-F05FD1D1C7B2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ises.Contracts</RootNamespace>
+    <AssemblyName>Ises.Contracts</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionsDto\ActionDto.cs" />
+    <Compile Include="AreasDto\AreaDto.cs" />
+    <Compile Include="AreaTypesDto\AreaTypeDto.cs" />
+    <Compile Include="BaseCertificatesDto\BaseCertificateDto.cs" />
+    <Compile Include="BaseDto.cs" />
+    <Compile Include="CertificatesUsersDto\CertificateUserDto.cs" />
+    <Compile Include="ClientFilters\AreaFilter.cs" />
+    <Compile Include="ClientFilters\AreaTypeFilter.cs" />
+    <Compile Include="ClientFilters\CertificateUserFilter.cs" />
+    <Compile Include="ClientFilters\ExternalDocumentFilter.cs" />
+    <Compile Include="ClientFilters\Filter.cs" />
+    <Compile Include="ClientFilters\HazardControlFilter.cs" />
+    <Compile Include="ClientFilters\HazardFilter.cs" />
+    <Compile Include="ClientFilters\HazardGroupFilter.cs" />
+    <Compile Include="ClientFilters\HazardRuleFilter.cs" />
+    <Compile Include="ClientFilters\HistoryChangeFilter.cs" />
+    <Compile Include="ClientFilters\InstallationFilter.cs" />
+    <Compile Include="ClientFilters\IsolationCertificateFilter.cs" />
+    <Compile Include="ClientFilters\IsolationPointFilter.cs" />
+    <Compile Include="ClientFilters\LeadDisciplineFilter.cs" />
+    <Compile Include="ClientFilters\LocationFilter.cs" />
+    <Compile Include="ClientFilters\OrganizationFilter.cs" />
+    <Compile Include="ClientFilters\PositionFilter.cs" />
+    <Compile Include="ClientFilters\RolePermissionFilter.cs" />
+    <Compile Include="ClientFilters\UserFilter.cs" />
+    <Compile Include="ClientFilters\UserRoleFilter.cs" />
+    <Compile Include="ClientFilters\WorkCertificateCategoryFilter.cs" />
+    <Compile Include="ClientFilters\WorkCertificateFilter.cs" />
+    <Compile Include="Common\Enums.cs" />
+    <Compile Include="ExternalDocumentsDto\ExternalDocumentDto.cs" />
+    <Compile Include="HazardControlsDto\HazardControlDto.cs" />
+    <Compile Include="HazardGroupsDto\HazardGroupDto.cs" />
+    <Compile Include="HazardRulesDto\HazardRuleDto.cs" />
+    <Compile Include="HazardsDto\HazardDto.cs" />
+    <Compile Include="HistoryChangesDto\HistoryChangeDto.cs" />
+    <Compile Include="InstallationsDto\InstallationDto.cs" />
+    <Compile Include="IsolationCertificatesDto\IsolationCertificateDto.cs" />
+    <Compile Include="IsolationPointsDto\IsolationPointDto.cs" />
+    <Compile Include="LeadDisciplinesDto\LeadDisciplineDto.cs" />
+    <Compile Include="LocationsDto\LocationDto.cs" />
+    <Compile Include="OrganizationsDto\OrganizationDto.cs" />
+    <Compile Include="PositionsDto\PositionDto.cs" />
+    <Compile Include="RolePermissionsDto\RolePermissionDto.cs" />
+    <Compile Include="UsersDto\ContactDetailsDto.cs" />
+    <Compile Include="UsersDto\UserDto.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserRolesDto\UserRoleDto.cs" />
+    <Compile Include="WorkCertificateCategoriesDto\WorkCertificateCategoryDto.cs" />
+    <Compile Include="WorkCertificatesAreasDto\WorkCertificateAreaDto.cs" />
+    <Compile Include="WorkCertificatesDto\WorkCertificateDto.cs" />
+    <Compile Include="WorkCertificatesHazardControlsDto\WorkCertificateHazardControlDto.cs" />
+    <Compile Include="WorkCertificatesHazardsDto\WorkCertificateHazardDto.cs" />
+    <Compile Include="WorkCertificatesWorkCertificatesDto\WorkCertificateWorkCertificateDto.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ises.Core.Common\Ises.Core.Common.csproj">
+      <Project>{67202C7E-0993-471A-9912-4E025B3A02EB}</Project>
+      <Name>Ises.Core.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
